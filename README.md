@@ -7,7 +7,7 @@ Introduction to Web Development.
 - CSS
 - JavaScript
 
-Strelok is an original platformer game built entirely from scratch on the Phaser 3 game framework.
+Strelok is an original platformer game built entirely from scratch using the Phaser 3 framework.
 
 
 ![image](https://github.com/user-attachments/assets/d4825516-5e94-4505-bc9b-30ac4fc19dbe)

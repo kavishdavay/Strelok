@@ -4,6 +4,7 @@ CST2120 Coursework 1 - Gaming Website (Year 2)
 Introduction to Web Development.
 
 - HTML
+- PHP
 - CSS
 - JavaScript
 

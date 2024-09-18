@@ -1,0 +1,630 @@
+/* Defining style for all html elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ArcadeClassic', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+/* Editing Scrollbar */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #3a3647;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6c247d;
+    border-radius: 100vw;
+    border: .25em solid #3a3647;
+}
+
+/* Defining style for body element */
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-container {
+    position: relative;
+    flex: 1;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 3%;
+}
+
+/* Logo styling */
+nav .logo {
+    width: 200px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* Unordered list styling */
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* List item styling */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Link styling within list items */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 5%;
+}
+
+/* Hover and active state styling */
+nav ul li a:hover,
+nav ul li a.active {
+    background: #6c247d;
+    color: #fff;
+}
+
+/* Nav play now button */
+.playNowBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #AB20FD;
+    font-size: 19px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* Effect for play now button on hover */
+.playNowBtn:hover {
+    color: #fff;
+    background: #7D12FF;
+    box-shadow: 0 0 10px #7D12FF, 0 0 30px #7D12FF, 0 0 60px #7D12FF;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Home Page */
+.block1 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#352234, black);
+}
+
+.block2 {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    color: #fff;
+}
+
+/* Positioning introduction title and paragraph */
+.introduction {
+    padding-top: 5%;
+    padding-left: none;
+    margin-right: 20%;
+}
+
+.introduction p {
+    padding-top: 2%;
+    width: 60%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Positioning gif next to introduction */
+.block2 #flying_monster {
+    padding-left: 50%;
+    margin-top: -260px;
+}
+
+/* Positioning home page header images */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Setting z-index priority for each image */
+section img#clouds {
+    padding-bottom: 9%;
+    z-index: 8;
+}
+
+section img#mountains {
+    padding-bottom: 9%;
+    z-index: 9;
+}
+
+section img#planets {
+    z-index: 7;
+}
+
+section img#stars {
+    z-index: 6;
+}
+
+section img#plant_background {
+    z-index: 10;
+}
+
+/* Styling and positioning play now button below introduction paragraph */
+.big_play_now_button {
+    position: absolute;
+    display: inline-block;
+    padding: 25px 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #7D12FF;
+    left: 100px;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+/* Glow effect around play now button on hover */
+.big_play_now_button:hover {
+    color: #fff;
+    background: #7D12FF;
+    box-shadow: 0 0 10px #7D12FF, 0 0 30px #7D12FF, 0 0 60px #7D12FF;
+    border-radius: 15px;
+}
+
+
+/* Login Page & Registration Page*/
+.login_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Positioning login/registration form */
+.login_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: #121212;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* Styling Login Form Title */
+.login_form h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: whitesmoke;
+    background-color: #7D12FF;
+    border-bottom: 1px solid silver;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Login Form Padding */
+.login_form form {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Text Field Styling */
+form .text_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 15px 0;
+    width: 60%;
+}
+
+/* Input Field Styling */
+.text_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #adadad;
+}
+
+/* Label Styling */
+.text_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Bottom Border Styling on Focus */
+.text_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #7D12FF;
+    transition: .5s;
+}
+
+/* Label Animation on Focus */
+.text_field input:focus~label,
+.text_field input:valid~label {
+    top: -5px;
+    color: #7D12FF;
+}
+
+/* Bottom Border Animation on Focus */
+.text_field input:focus~span::before,
+.text_field input:valid~span::before {
+    width: 100%;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background: #7D12FF;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Submit Button Hover Effects */
+input[type="submit"]:hover {
+    border-color: #7D12FF;
+    transition: .3s;
+    box-shadow: 0 0 5px #7D12FF, 0 0 10px #7D12FF, 0 0 20px #7D12FF;
+}
+
+/* Signup Link Styling */
+.signup_link {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a {
+    color: #7D12FF;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Messages Styling */
+#loginUsernameError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+#loginPasswordError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+/* Registration Page*/
+
+#usernameError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+#passwordError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+#emailError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+#phoneError {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-44px);
+    color: red;
+}
+
+/* Date Picker Styling */
+form .date_field {
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.date_field input {
+    font-size: 16px;
+    color: #adadad;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #121212;
+    border: solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.date_field label {
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+/* Calendar Icon Styling */
+::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+
+/* Leaderboard Page*/
+
+/* Setting linear gradient as background for page */
+.leaderboard_background {
+    background: linear-gradient(black, #1c0638);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+/* Positioning and styling leaderboard title */
+.leaderboard_title {
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    color: white;
+}
+
+/* Positioning and styling leaderboard table */
+.leaderboard-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.3em;
+    min-width: 900px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #adadad;
+}
+
+/* Setting background, font colour and text position of table header */
+.leaderboard-table thead tr {
+    background-color: #7D12FF;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Defining cell proportions */
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 12px 15px;
+}
+
+/* Styling row border and color */
+.leaderboard-table tbody tr {
+    border-bottom: 1px solid #121212;
+    background-color: #121212;
+}
+
+/* Changing colour of bottom border of last row in table */
+.leaderboard-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7D12FF;
+}
+
+/* Changing colour of active user row */
+.leaderboard-table tbody tr.active-row {
+    font-weight: bold;
+    color: #7D12FF;
+}
+
+/* Positioning gifs on page */
+#insect_monster {
+    position: absolute;
+    right: 0%;
+    top: 70%;
+}
+
+#lightning {
+    position: absolute;
+    left: -5%;
+    top: -10%;
+}
+
+
+
+/* Controls Page */
+
+/* Setting background colour, size and position for control page */
+.control_background {
+    position: absolute;
+    background: #121212;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+/* Positioning and styling control page title  */
+.controls_title {
+    position: relative;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #7D12FF;
+    padding-top: 3%;
+    font-size: 45px;
+}
+
+/* Arrow key image positioning */
+.arrow_keys {
+    position: absolute;
+    height: 200px;
+    margin-top: 16%;
+    margin-left: 7%;
+}
+
+/* Wizard running gif positioning */
+.running_animation {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 70%;
+    height: 350px;
+}
+
+/* Positioning and styling of arrow text */
+.arrow_text {
+    position: relative;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 20%;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+/* Spacebar image positioning */
+.spacebar {
+    position: absolute;
+    height: 100px;
+    margin-top: 13%;
+    margin-left: 6%;
+}
+
+
+
+
+/* Game Page */
+
+/* Setting linear-gradient as background for page, defining position and size of background */
+.game_background {
+    position: relative;
+    background-color: #121212;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+/* Setting game area position and size */
+/* Displaying image on game area as background */
+.game_area {
+    position: relative;
+    height: 550px;
+    width: 900px;
+    background-color: white;
+    left: 19%;
+    top: 10%;
+    box-shadow: 0 0 5px #7D12FF, 0 0 10px #7D12FF, 0 0 40px #7D12FF;
+}
+
+canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+}
